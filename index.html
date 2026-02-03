@@ -350,18 +350,25 @@
   object-fit: contain;
 }
 
+		/* overlay perfectly fits wrapper */
 .logo-overlay {
   position: absolute;
-  inset: 0;
+  inset: 0;                  /* top:0 right:0 bottom:0 left:0 */
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.45); /* overlay shade */
+  text-align: center;
+
+  padding: 10px;             /* keeps text inside edges */
+  box-sizing: border-box;
+
   color: #fff;
-  font-size: 18px;
   font-weight: 700;
+  font-size: clamp(14px, 2vw, 18px); /* auto-scale text */
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  background: rgba(0, 0, 0, 0.45);
 }
 
     </style>
