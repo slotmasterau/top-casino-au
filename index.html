@@ -350,35 +350,18 @@
   object-fit: contain;
 }
 
-		/* overlay perfectly fits wrapper */
-.logo-wrapper {
-  position: relative;
-  width: 220px;
-  height: 120px;
-  padding: 10px;
-
-  background: linear-gradient(145deg, #111, #1b1b1b);
-  border: 2px solid #ffd700;           /* gold border */
-  border-radius: 16px;
-
-  box-shadow:
-    0 0 12px rgba(255, 215, 0, 0.35),
-    inset 0 0 10px rgba(255, 255, 255, 0.05);
-
-  overflow: hidden;
-  transition: all 0.3s ease;
-
-
-  padding: 10px;             /* keeps text inside edges */
-  box-sizing: border-box;
-
+.logo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45); /* overlay shade */
   color: #fff;
+  font-size: 18px;
   font-weight: 700;
-  font-size: clamp(14px, 2vw, 18px); /* auto-scale text */
   letter-spacing: 1px;
   text-transform: uppercase;
-
-  background: rgba(0, 0, 0, 0.45);
 }
 
     </style>
@@ -407,13 +390,10 @@
                 </div>
                 <div class="bonus-list">
                     <div class="bonus-item">
-                   <div class="logo-wrapper">
- <div class="logo-wrapper">
+          <div class="logo-wrapper">
   <img src="https://mel77.com/media/7978ddb8344863771f2bb.gif" alt="Logo" class="logo-gif">
- 
   <div class="logo-overlay">PLAY NOW</div>
-</div>
-			</div>			
+</div>			
                     <div class="bonus-item">
                         <span class="bonus-label">Free Spins</span>
                         200 on Starburst
@@ -449,10 +429,9 @@
                 <div class="bonus-list">
                     <div class="bonus-item">
                        <div class="logo-wrapper">
-  <img src="https://mel77.com/media/7978ddb8344863771f2bb.gif" alt="Logo" class="logo-gif">
+  <img src="logo.gif" alt="Logo" class="logo-gif">
   <div class="logo-overlay">PLAY NOW</div>
 </div>
-                    </div>
                     <div class="bonus-item">
                         <span class="bonus-label">Free Spins</span>
                         100 Cash Spins
